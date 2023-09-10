@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='caravanassets',
-    version='0.0.1',
+    version='0.0.2',
     description='This is a python package for implementing the card game Caravan',
     long_description_content_type="text/markdown",
     long_description=README,
