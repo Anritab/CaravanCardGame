@@ -47,8 +47,6 @@ def direction_check(Caravan: List[Card]) -> str:
     return result
 
 def add_card(Caravan: List[Card], card: Card, position: int) -> List[Card]:
-    if len(Caravan) != 0 and Caravan[position].isPicture() or position >= len(Caravan) or position < 0:    #защита от дурака
-        return Caravan
     if len(Caravan) == 0:
         if not card.isPicture():
             Caravan.append(card)
