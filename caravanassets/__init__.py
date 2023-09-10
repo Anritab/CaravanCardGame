@@ -1,11 +1,11 @@
-from moves import (
+from .moves import (
     price,
     last_nonpic_card,
     last_suit_check,
     direction_check,
     add_card
 )
-from cards import (
+from .cards import (
     NAMES,
     SUITS,
     Card

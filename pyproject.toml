@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "caravanassets"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Anri Tabuev", email="anri.tabuev@gmail.com" },
 ]
