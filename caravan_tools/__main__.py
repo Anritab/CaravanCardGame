@@ -1,11 +1,6 @@
 #for now only for debug
-
-
-
 from moves import *
 from cards import *
-
-
 
 deck = list()
 for name in range(13):
