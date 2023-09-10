@@ -1,5 +1,5 @@
 from typing import List
-from cards import Card
+from .cards import Card
 
 def price(Caravan: List[Card]) -> int:
     count = 0
