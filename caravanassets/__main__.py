@@ -4,30 +4,33 @@ from caravanassets import get_args
 
 def main():
     args = get_args()
-
-    if len(args.caravan) == 0:
-        print("it's empty...")
-        return
-    if len(args.caravan) % 2 == 1:
-        print("should be an even number of arguments")
-        return
-    for i in range(len(args.caravan)):
-        if type(args.caravan[i]) != int:
-            print("only ints allowed")
+    try:
+        if len(args.caravan) == 0:
+            print("it's empty...")
             return
-        elif i % 2 == 0:
-            if args.caravan[i] < 1 or args.caravan[i] > 13:
-                print("enter card in range (1-13)")
+        if len(args.caravan) % 2 == 1:
+            print("should be an even number of arguments")
+            return
+        for i in range(len(args.caravan)):
+            if type(args.caravan[i]) != int:
+                print("only ints allowed")
                 return
-            if args.caravan[i] == 11:
-                print("jacks cannot be used")
-                return
-        elif i % 2 == 1:
-            if args.caravan[i] < 1 or args.caravan[i] > 4:
-                print("enter suit in range (1-4)")
-                return
-    if args.caravan[0] > 10:
-        print("only numbers at first card")
+            elif i % 2 == 0:
+                if args.caravan[i] < 1 or args.caravan[i] > 13:
+                    print("enter card in range (1-13)")
+                    return
+                if args.caravan[i] == 11:
+                    print("jacks cannot be used")
+                    return
+            elif i % 2 == 1:
+                if args.caravan[i] < 1 or args.caravan[i] > 4:
+                    print("enter suit in range (1-4)")
+                    return
+        if args.caravan[0] > 10:
+            print("only numbers at first card")
+            return
+    except:
+        print("invalid type... i think so...")
         return
 
     try:
