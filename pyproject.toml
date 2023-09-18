@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "caravanassets"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Anri Tabuev", email="anri.tabuev@gmail.com" },
 ]
@@ -15,6 +15,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: Unix",
+]
+
+dependencies = [
+    "click"
 ]
 
 [project.urls]
