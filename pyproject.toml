@@ -5,7 +5,7 @@ description = "This is a python package for implementing the card game Caravan"
 
 license = "MIT"
 
-authors = ["Anri Tabuev"]
+authors = ["Anri Tabuev <anri.tabuev@gmail.com>"]
 [tool.poetry.dependencies]
 python = ">=3.9"
 

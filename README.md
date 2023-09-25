@@ -42,4 +42,4 @@ the jack removed the second card, and all the picture cards on it.
 
 # tests
 
-you can run tests using `pytest -q caravanassets/module_test.py`
+you can run tests using `poetry run pytest`
