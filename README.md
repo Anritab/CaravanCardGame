@@ -40,3 +40,6 @@ the jack removed the second card, and all the picture cards on it.
 # installation
 `pip install caravanassets`
 
+# tests
+
+you can run tests using `pytest -q caravanassets/module_test.py`
