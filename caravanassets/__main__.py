@@ -1,6 +1,9 @@
 from .moves import *
 from .cards import *
 from caravanassets import get_args
+from .run_app import start
+
+start()
 
 def main():
     args = get_args()
@@ -52,5 +55,5 @@ def main():
 
 
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+    #main()

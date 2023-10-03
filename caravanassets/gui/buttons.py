@@ -18,7 +18,28 @@ from caravanassets.moves import (
     add_card
 )
 
+class MyComboBox(QComboBox):
+    def __init__(self):
+        super().__init__()
 
+class MyQLineEdit(QLineEdit):
+    def __init__(self):
+        super().__init__()
+
+class MyQBoxLayout(QVBoxLayout):
+    def __init__(self):
+        super().__init__()
+class MyQWidget(QWidget):
+    def __init__(self):
+        super().__init__()
+
+class MyQLabel(QLabel):
+    def __init__(self):
+        super().__init__()
+
+class MyQPushButton(QPushButton):
+    def __init__(self, text, parent=None):
+        super().__init__(text, parent)
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -26,23 +47,23 @@ class Window(QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-        self.input_caravan = QLineEdit()
+        self.input_caravan = MyQLineEdit()
 
-        self.combobox = QComboBox()
+        self.combobox = MyComboBox()
         self.combobox.addItems(['price', 'last_nonpic', 'last_suit', 'direction'])
 
-        self.button = QPushButton('Use', self)
+        self.button = MyQPushButton('Use', self)
         self.button.clicked.connect(self.caratools)
 
-        self.result = QLabel()
+        self.result = MyQLabel()
 
-        self.layout = QVBoxLayout()
+        self.layout = MyQBoxLayout()
         self.layout.addWidget(self.input_caravan)
         self.layout.addWidget(self.combobox)
         self.layout.addWidget(self.button)
         self.layout.addWidget(self.result)
 
-        container = QWidget()
+        container = MyQWidget()
         container.setLayout(self.layout)
 
         self.setCentralWidget(container)

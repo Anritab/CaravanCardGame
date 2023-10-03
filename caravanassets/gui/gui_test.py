@@ -2,6 +2,7 @@ from pytestqt.qt_compat import qt_api
 
 from caravanassets.gui.buttons import Window
 
+
 import PyQt5.QtCore
 
 print(PyQt5.QtCore)
