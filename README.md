@@ -43,3 +43,5 @@ the jack removed the second card, and all the picture cards on it.
 # tests
 
 you can run tests using `poetry run pytest`
+
+gui tests included

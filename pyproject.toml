@@ -11,3 +11,6 @@ python = ">=3.9"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
+pyqt5 = "^5.15.9"
+pytest-qt = "^4.2.0"
+
